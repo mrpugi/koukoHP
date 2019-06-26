@@ -1,0 +1,49 @@
+.container{
+  max-width: 1170px;
+  width:100%;
+  padding: 0 15px;
+  margin:0 auto;
+
+}
+header{
+  background-color: red;
+}
+.title{
+  float:left;
+  widows: 50%;
+  display:block;
+}
+.request{
+  float:right;
+  widows: 50%;
+  margin-right: 30px;
+  display:block;
+}
+.top p{
+  clear: both;
+}
+.top{
+  display:block;
+  background-image: url("hmhm.jpg");
+  background-size: cover;
+}
+.tab{
+  float:left;
+  width:20%;
+  margin-bottom: 15px;
+}
+.articles{
+  width: 60%;
+  float:left;
+  margin-right: 3%;
+}
+.article img{
+  width: 100%;
+}
+.main{
+
+}
+.twitter{
+  width:37%;
+  float:left;
+}
