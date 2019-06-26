@@ -1,37 +1,123 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*-----------------ここまでリセットcss-----------------*/
+
+/*-----------------ここから初期設定-----------------*/
 .container{
   max-width: 1170px;
   width:100%;
-  padding: 0 15px;
+  padding: 0 20px;
   margin:0 auto;
-
 }
+/*-----------------ここまで初期設定-------------------*/
+
+/*-----------------ここからヘッダ-----------------*/
 header{
-  background-color: red;
+  position:fixed;
+  top:0;
+  height: 60px;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(34, 49, 52, 0.9);
+  color :white;
+}
+h1{
+  font-size: 40px;
 }
 .title{
-  float:left;
-  widows: 50%;
-  display:block;
+  position: absolute;
+  left:20px;
+  top: 0;
+  bottom: 0;
+  display:flex;
+  justify-content: center;
+  align-items: content;
 }
-.request{
-  float:right;
-  widows: 50%;
-  margin-right: 30px;
-  display:block;
+.title h1{
+  margin:auto;
 }
+.tab-box{
+  position: absolute;
+  right:20px;
+  top: 0;
+  bottom: 0;
+  display:flex;
+  justify-content: center;
+  align-items: content;
+  font-size: 30px;
+}
+.tab{
+  display:block;
+  padding:10px 10px;
+  color:white;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.tab:hover{
+  background-color: rgba(255, 255, 255, 0.3);
+}
+/*-----------------ここまでヘッダー-------------------*/
+
+/*-----------------ここからトップ-----------------*/
 .top p{
   clear: both;
 }
 .top{
+  margin:60px 0;
   display:block;
   background-image: url("hmhm.jpg");
   background-size: cover;
+  height: 500px;
 }
-.tab{
-  float:left;
-  width:20%;
-  margin-bottom: 15px;
-}
+/*-----------------ここまでトップ--------------------*/
+
+/*-----------------ここからメインコンテンツ-----------------*/
 .articles{
   width: 60%;
   float:left;
@@ -40,10 +126,19 @@ header{
 .article img{
   width: 100%;
 }
-.main{
-
-}
 .twitter{
   width:37%;
   float:left;
 }
+/*-----------------ここまでメインコンテンツ-----------------*/
+
+/*-----------------ここからフッター-----------------*/
+footer{
+  clear: both;
+  background-color: rgba(34, 49, 52, 0.5);
+  padding:7px 0;
+}
+footer p{
+  margin-bottom:0;
+}
+/*------------------ここまでフッター------------------*/
