@@ -1,0 +1,27 @@
+/*-----------------ここからトップ-----------------*/
+.top p{
+  clear: both;
+}
+.top{
+  margin:60px 0;
+  display:block;
+  background-image: url("hmhm.jpg");
+  background-size: cover;
+  height: 500px;
+}
+/*-----------------ここまでトップ--------------------*/
+
+/*-----------------ここからメインコンテンツ-----------------*/
+.articles{
+  width: 60%;
+  float:left;
+  margin-right: 3%;
+}
+.article img{
+  width: 100%;
+}
+.twitter{
+  width:37%;
+  float:left;
+}
+/*-----------------ここまでメインコンテンツ-----------------*/
