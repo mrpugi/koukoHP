@@ -46,6 +46,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+*{
+	box-sizing: border-box;
+}
 /*-----------------ここまでリセットcss-----------------*/
 
 /*-----------------ここから初期設定-----------------*/
@@ -66,9 +69,7 @@ header{
   z-index: 10;
   background-color: rgba(34, 49, 52, 0.9);
 }
-h1{
-  font-size: 40px;
-}
+
 .title{
   position: absolute;
   left:20px;
@@ -80,10 +81,6 @@ h1{
 }
 .title h1{
   margin:auto;
-}
-.title h1 a{
-  color :white;
-	text-decoration: none;
 }
 .tab-box{
   position: absolute;
@@ -104,6 +101,11 @@ h1{
 }
 .tab:hover{
   background-color: rgba(255, 255, 255, 0.3);
+}
+@media (max-width:670px) {
+	.tab-box{
+		display: none;
+	}
 }
 /*-----------------ここまでヘッダー-------------------*/
 

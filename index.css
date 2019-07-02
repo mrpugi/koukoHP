@@ -15,13 +15,13 @@
 .articles{
   width: 60%;
   float:left;
-  margin-right: 3%;
+  padding-right: 3%;
 }
 .article img{
   width: 100%;
 }
 .twitter{
-  width:37%;
+  width:40%;
   float:left;
 }
 /*-----------------ここまでメインコンテンツ-----------------*/
