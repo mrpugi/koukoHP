@@ -67,7 +67,8 @@ header{
   height: 60px;
   width: 100%;
   z-index: 10;
-  background-color: rgba(34, 49, 52, 0.9);
+  background-color: rgba(133, 209, 65, 0.9);
+	border-bottom: 1px solid black;
 }
 
 .title{
@@ -102,9 +103,24 @@ header{
 .tab:hover{
   background-color: rgba(255, 255, 255, 0.3);
 }
+.resp{
+	display: none;
+}
 @media (max-width:670px) {
 	.tab-box{
 		display: none;
+	}
+	.resp{
+		position: absolute;
+	  right:20px;
+	  top: 0;
+	  bottom: 0;
+	  display:flex;
+	  font-size: 30px;
+	}
+	.resp i{
+	  padding:15px 10px;
+	  color:white;
 	}
 }
 /*-----------------ここまでヘッダー-------------------*/

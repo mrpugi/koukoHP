@@ -12,16 +12,22 @@
 /*-----------------ここまでトップ--------------------*/
 
 /*-----------------ここからメインコンテンツ-----------------*/
-.articles{
-  width: 60%;
-  float:left;
-  padding-right: 3%;
-}
+
 .article img{
   width: 100%;
 }
 .twitter{
-  width:40%;
-  float:left;
+  height: 400px;
+}
+@media(min-width:670px){
+  .articles{
+    width: 60%;
+    float:left;
+    padding-right: 3%;
+  }
+  .twitter{
+    width:40%;
+    float:left;
+  }
 }
 /*-----------------ここまでメインコンテンツ-----------------*/
