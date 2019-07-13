@@ -67,7 +67,7 @@ header{
   height: 60px;
   width: 100%;
   z-index: 10;
-  background-color: rgba(133, 209, 65, 0.9);
+  background-color: rgba(237, 129, 148, 0.9);
 	border-bottom: 1px solid black;
 }
 
@@ -92,11 +92,12 @@ header{
   justify-content: center;
   align-items: content;
   font-size: 25px;
+	font-family: "ＭＳ 明朝";
 }
 .tab{
   display:block;
   padding:15px 10px;
-  color:white;
+  color:rgb(255,254,217);
   text-decoration: none;
   transition: all 0.5s;
 }
@@ -106,6 +107,7 @@ header{
 .resp{
 	display: none;
 }
+
 @media (max-width:670px) {
 	.tab-box{
 		display: none;
@@ -121,6 +123,17 @@ header{
 	.resp i{
 	  padding:15px 10px;
 	  color:white;
+	}
+	#resp-tag-Box{
+	  background-color: rgba(133, 209, 65, 0.9);
+		position:fixed;
+	  top:60px;
+		right:0;
+	}
+	.resp-tab{
+		display: block;
+		padding: 10px;
+		font-size: 25px;
 	}
 }
 /*-----------------ここまでヘッダー-------------------*/

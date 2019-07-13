@@ -1,4 +1,9 @@
 $(function(){
   $("header").load("header.html");
   $("footer").load("footer.html");
+  $("#resp-tag-Box").load("tagBox.html");
+  $("#resp-tag-Box").css("display","none");
+  $("header").click(function(){
+    if($(window).width()<=670)$("#resp-tag-Box").toggle();
+  });
 });
