@@ -1,0 +1,16 @@
+.main{
+  width:90%;
+  margin:auto;
+  margin-top: 20px;
+}
+.main p{
+  line-height: 18px;
+}
+.container{
+  margin-bottom: 10px;
+}
+.main img{
+  max-width: 600px;
+  width: 80%;
+  margin-top: 10px;
+}
