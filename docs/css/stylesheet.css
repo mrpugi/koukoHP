@@ -142,6 +142,9 @@ header{
 		display: block;
 		padding: 10px;
 		font-size: 25px;
+		color:rgb(255,254,217);
+		font-family: "ＭＳ 明朝";
+		text-decoration: none;
 	}
 }
 
