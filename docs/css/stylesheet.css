@@ -107,8 +107,10 @@ header{
 .resp{
 	display: none;
 }
-
-@media (max-width:670px) {
+.back-header{
+	height: 60px;
+}
+@media (max-width:870px) {
 	.tab-box{
 		display: none;
 	}
@@ -125,7 +127,7 @@ header{
 	  color:white;
 	}
 	#resp-tag-Box{
-	  background-color: rgba(133, 209, 65, 0.9);
+	  background-color: rgba(237, 129, 148, 0.9);
 		position:fixed;
 	  top:60px;
 		right:0;
@@ -136,6 +138,7 @@ header{
 		font-size: 25px;
 	}
 }
+
 /*-----------------ここまでヘッダー-------------------*/
 
 /*-----------------ここからフッター-----------------*/

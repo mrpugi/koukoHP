@@ -4,6 +4,6 @@ $(function(){
   $("#resp-tag-Box").load("./parts/tagBox.html");
   $("#resp-tag-Box").css("display","none");
   $("header").click(function(){
-    if($(window).width()<=670)$("#resp-tag-Box").toggle();
+    if($(window).width()<=870)$("#resp-tag-Box").toggle();
   });
 });
