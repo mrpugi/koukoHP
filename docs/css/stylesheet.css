@@ -153,10 +153,13 @@ header{
 /*-----------------ここからフッター-----------------*/
 footer{
   clear: both;
-  background-color: rgba(34, 49, 52, 0.5);
+  background-color: rgba(237, 129, 148, 0.9);
   padding:7px 0;
+	color: white;
+	font-family: "メイリオ";
 }
 footer p{
-  margin-bottom:0;
+  margin-bottom:10px;
+	font-size: 20px;
 }
 /*------------------ここまでフッター------------------*/
