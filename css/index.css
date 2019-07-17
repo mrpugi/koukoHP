@@ -5,7 +5,7 @@
 .top{
   margin:60px 0;
   display:block;
-  background-image: url("top3.jpg");
+  background-image: url("../images/top3.jpg");
   background-size: cover;
   height: 0;
   padding-bottom: 46.8%;
