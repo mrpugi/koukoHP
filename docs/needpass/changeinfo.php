@@ -7,9 +7,9 @@
   <title>Document</title>
 </head>
 <body>
-  <form action="edit.php" method="post" enctype="multipart/form-data">
+  <form action="editinfo.php" method="post" enctype="multipart/form-data">
     <p>題名:<?php
-      $list_json=file_get_contents("../titlelist.json");
+      $list_json=file_get_contents("../infolist.json");
       $list_decoded=json_decode($list_json,true);
       $no=$_POST["editno"];
       $title=$list_decoded[$no];
@@ -17,10 +17,10 @@
     ?></p>
     <p>画像<input type="file" name="image" accept="image/jpeg" capture="camera"></p>
     <textarea name="nakami" cols="30" rows="10"><?php
-      $nakami=file("../article/{$no}.html");
-      $nakami_slice=array_slice($nakami,1,-1);
+      $nakami=file("../article/info{$no}.html");
+      $nakami_slice=array_slice($nakami,1);
       foreach ($nakami_slice as $line){
-        echo str_replace(array("<p>","</p>"),"",$line);
+        echo str_replace(array("<p>","</p>","<img src=\"../images/info{$no}.jpg\" alt=\"画像\">"),"",$line);
       }
     ?></textarea>
     <input type="hidden" name="no" value=<?php echo "\"{$no}\""?>>
