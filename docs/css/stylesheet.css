@@ -180,7 +180,15 @@ footer{
 	height: 70px;
 }
 footer p{
-  margin-bottom:10px;
+  padding-bottom:10px;
 	font-size: 20px;
 }
+footer .container{
+	margin-bottom: 0;
+}
 /*------------------ここまでフッター------------------*/
+@media (max-width:670px){
+	footer .container{
+		padding-bottom: 40px;
+	}
+}
