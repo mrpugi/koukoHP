@@ -22,7 +22,7 @@
     if($_FILES["image"]["tmp_name"]){
       move_uploaded_file($_FILES["image"]["tmp_name"],"../images/info{$no}.jpg");
     }
-    if(file_exists("../images/ingo{$no}.jpg")){
+    if(file_exists("../images/info{$no}.jpg")){
       $articlehtml.="\n<img src=\"../images/info{$no}.jpg\" alt=\"画像\">";
     }
     fputs($fp,$articlehtml);
